@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../../../public/fonts/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Manrope-Regular';
+    src: url('../../../public/fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navlinks{
+    font-family: 'Manrope-Regular' , sans-serif;
+    font-size: 1.5rem;
+}
