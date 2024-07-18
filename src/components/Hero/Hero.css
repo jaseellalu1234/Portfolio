@@ -1,0 +1,30 @@
+
+  .main-image{
+    z-index: 10;
+}
+/* .outlineFrontend{
+    color: white;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+} */
+.banner_title,.banner_title_Developer{
+    z-index: -1;
+    font-family: 'Manrope-Semibold' , sans-serif;
+    font-weight: 600;
+}
+.banner_title_Developer{
+    color: transparent;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  text-stroke: 2px rgb(0, 0, 0);
+}
+.banner_title_Outline{
+    color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+  font-weight: 600;
+  font-family: 'Manrope-Semibold' , sans-serif;
+}
+.developer{
+    color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
