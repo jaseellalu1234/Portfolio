@@ -32,7 +32,7 @@ function Navbar() {
         <ul className="hidden md:flex space-x-4 text-black">
           <li className="px-3.5">
             <a href="#" className="navlinks">
-              Home
+              Test
             </a>
           </li>
           <li className="px-3.5">
