@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.58e2f98c.css",
-    "main.js": "/Portfolio/static/js/main.34d9cdeb.js",
+    "main.css": "/Portfolio/static/css/main.424c9ac0.css",
+    "main.js": "/Portfolio/static/js/main.eb9dc0d5.js",
     "static/js/453.bb828c5d.chunk.js": "/Portfolio/static/js/453.bb828c5d.chunk.js",
     "static/media/Me.png": "/Portfolio/static/media/Me.9ee69c686a3cce8edab5.png",
+    "static/media/web_1.png": "/Portfolio/static/media/web_1.56640d2db8cc3254b369.png",
     "static/media/Manrope-Regular.ttf": "/Portfolio/static/media/Manrope-Regular.a9b9e09fe6b69741f316.ttf",
+    "static/media/Manrope-Light.ttf": "/Portfolio/static/media/Manrope-Light.2bf511c25636c7d7a4ce.ttf",
     "static/media/Manrope-ExtraLight.ttf": "/Portfolio/static/media/Manrope-ExtraLight.d0721272b8d9dd2d2d0f.ttf",
+    "static/media/mediasans-black-TRIAL-BF63c7546b0dca7.otf": "/Portfolio/static/media/mediasans-black-TRIAL-BF63c7546b0dca7.096e2bcdd91c71f63017.otf",
     "index.html": "/Portfolio/index.html",
-    "main.58e2f98c.css.map": "/Portfolio/static/css/main.58e2f98c.css.map",
-    "main.34d9cdeb.js.map": "/Portfolio/static/js/main.34d9cdeb.js.map",
+    "main.424c9ac0.css.map": "/Portfolio/static/css/main.424c9ac0.css.map",
+    "main.eb9dc0d5.js.map": "/Portfolio/static/js/main.eb9dc0d5.js.map",
     "453.bb828c5d.chunk.js.map": "/Portfolio/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58e2f98c.css",
-    "static/js/main.34d9cdeb.js"
+    "static/css/main.424c9ac0.css",
+    "static/js/main.eb9dc0d5.js"
   ]
 }
