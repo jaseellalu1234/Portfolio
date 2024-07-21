@@ -1,4 +1,21 @@
-
+@font-face {
+  font-family: 'Manrope';
+  src: url('../../../public/fonts/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope-Light';
+  src: url('../../../public/fonts/Manrope-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: url('../../../public/fonts/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
   .main-image{
     z-index: 10;
 }
@@ -27,4 +44,8 @@
 .developer{
     color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.social_link{
+  font-size: 19px;
+  font-family: 'Manrope-Light' , sans-serif;
 }

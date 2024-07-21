@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        200: "50rem", // Custom size example
+        200: "50rem",
+        230: "70rem",
+        250: "80rem", // Custom size example
       },
       height: {
         200: "50rem", // Custom size example
