@@ -1,0 +1,188 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(13, 13, 13) !important;
+}
+.container {
+  display: flex;
+}
+.gradient {
+  position: absolute;
+  top: -450px;
+  right: 0px;
+  height: 1100px;
+  width: 70vw;
+  background: radial-gradient(circle, #f09f00 0%, rgb(0 95 212 / 0%) 60%);
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: gradientMove 6s ease-in-out infinite;
+}
+
+/* Navabar-Section */
+.logo {
+  font-size: 18px;
+  color: #fff;
+}
+ul {
+  padding: 0 !important;
+}
+ul,
+li {
+  margin-bottom: 0 !important;
+}
+.navbar-container {
+  display: flex;
+  justify-content: center;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+}
+.navbar.scrolled li a {
+  color: #000 !important;
+}
+.btn.btn-warning {
+  /* background-color: #f09f00; */
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.content {
+  position: relative;
+  width: 100%;
+  color: #fff;
+}
+header {
+  margin-top: 10rem;
+}
+.hero .profile {
+  position: absolute;
+  z-index: 99;
+  width: 600px;
+  margin-bottom: 20px;
+}
+.job-role span {
+  border: 0.3px solid #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.container.social-media {
+  margin-top: 100px;
+}
+.container.social-media ul li {
+  z-index: 99;
+  padding: 0 15px;
+  list-style-type: none;
+}
+.container.social-media a {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #fff;
+}
+
+.about-section {
+  position: relative;
+  z-index: 100;
+  background: #fff;
+  margin-top: 7rem;
+}
+.about-section img {
+  opacity: 0.5;
+}
+.about-section h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
+/* Responsivness */
+
+/* Mobile */
+@media (min-width: 376px) {
+  .gradient {
+    position: absolute;
+    top: -450px;
+    right: 0px;
+    height: 1000px;
+    width: 100vw;
+    background: radial-gradient(circle, #f09f00 0%, rgb(0 95 212 / 0%) 60%);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: gradientMove 6s ease-in-out infinite;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff25 !important;
+    border-radius: 30px;
+    color: #fff;
+    backdrop-filter: blur(10px);
+  }
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .gradient {
+    position: absolute;
+    top: -450px;
+    right: 0px;
+    height: 1100px;
+    width: 100vw;
+    background: radial-gradient(circle, #f09f00 0%, rgb(0 95 212 / 0%) 60%);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: gradientMove 6s ease-in-out infinite;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 3rem;
+  }
+  .navbar {
+    margin: 10px 0;
+  }
+  .navbar-nav {
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #ffffff25;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 470px;
+    height: 55px;
+    backdrop-filter: blur(10px);
+  }
+  .hero h1 .text-1 {
+    position: absolute;
+    top: 50px;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .hero h1 .name-span {
+    font-size: 14rem;
+    font-weight: 600;
+  }
+  .hero h1 .job-role {
+    font-size: 2rem;
+  }
+  .job-role {
+    position: relative;
+    z-index: 99;
+    text-align: end;
+    top: -40px;
+  }
+}
