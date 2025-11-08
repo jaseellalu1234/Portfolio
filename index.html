@@ -13,6 +13,17 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "UT9Hg74lZUdrkQolo",
+        });
+      })();
+    </script>
   </head>
   <body>
     <div class="gradient-section d-flex justify-content-center">
@@ -132,7 +143,7 @@
         </div>
       </div>
     </div>
-    <div class="container skill-section mx-auto flex-column align-items-center">
+    <!-- <div class="container skill-section mx-auto flex-column align-items-center">
       <div class="row">
         <div class="col-12">
           <h1>Skills</h1>
@@ -234,6 +245,44 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="inputName" />
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail" />
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="1234 Main St"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <textarea
+                class="form-control"
+                id="inputAddress"
+                placeholder="Apartment, studio, or floor"
+              ></textarea>
+            </div>
+            
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary" onclick="sendMail()">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -248,6 +297,27 @@
           document.getElementById("logo").style.color = "white";
         }
       });
+
+      function sendMail() {
+        var params = {
+          name: document.getElementById("inputName").value,
+          email: document.getElementById("inputEmail").value,
+          message: document.getElementById("inputAddress").value,
+        };
+        const seviceID = "service_6con3he";
+      const templateID = "template_fmbqzeo"; 
+
+      emailjs.send(seviceID, templateID, params).then(
+        res => {
+          document.getElementById("inputName").value = "";
+          document.getElementById("inputEmail").value = "";
+          document.getElementById("inputAddress").value = "";
+          console.log(res);
+          alert("Your message sent successfully!!");
+        }
+      )
+      .catch((err) => console.log(err))
+      };
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
