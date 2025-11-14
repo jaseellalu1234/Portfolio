@@ -70,7 +70,7 @@ header {
   width: 100%;
   filter: blur(20px);
   opacity: 0;
-  transition: filter 4s ease-out, opacity 4s ease-out;
+  transition: filter 1.5s ease-out, opacity 1.5s ease-out;
 }
 .blur-image.active {
   filter: blur(0px);
