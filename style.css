@@ -5,7 +5,9 @@
 body {
   background-color: rgb(13, 13, 13) !important;
 }
-
+.mobile-version {
+  display: none;
+}
 .container {
   display: flex;
 }
@@ -64,7 +66,8 @@ li {
   color: #fff;
 }
 header {
-  margin-top: 10rem;
+  height: 100%;
+  margin-top: 12rem;
 }
 .blur-image {
   width: 100%;
@@ -104,6 +107,7 @@ header {
 }
 
 .about-section {
+  height: 100vh;
   position: relative;
   z-index: 100;
   background: #fff;
@@ -121,6 +125,7 @@ header {
   padding: 2rem 5rem;
   font-weight: 600;
 }
+
 #skills .col-12 {
   font-size: 6rem;
   color: #fff;
@@ -154,6 +159,28 @@ header {
 /* Mobile */
 @media (min-width: 376px) and (max-width: 767px) {
   body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mobile-version {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 auto;
+  }
+  .p1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .p2 {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .hide {
     display: none !important;
   }
   .gradient {
