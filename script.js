@@ -6,6 +6,22 @@ gsap.to(".social-media", {
   delay: 0.2,
 });
 
+gsap.fromTo(
+  ".blur-image",
+  { filter: "blur(0px)" },
+  {
+    filter: "blur(4px)",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".blur-image",
+      start: "top 0%",
+      end: "top 30%",
+      scrub: true,
+      // markers: true,
+    },
+  }
+);
+
 let scrolls = document.getElementById("navmain");
 
 window.addEventListener("scroll", () => {
@@ -24,6 +40,7 @@ function sendMail() {
     name: document.getElementById("inputName").value,
     email: document.getElementById("inputEmail").value,
     message: document.getElementById("inputAddress").value,
+    phone: document.getElementById("inputPhoneNumber").value,
   };
   const seviceID = "service_6con3he";
   const templateID = "template_fmbqzeo";
@@ -34,6 +51,7 @@ function sendMail() {
       document.getElementById("inputName").value = "";
       document.getElementById("inputEmail").value = "";
       document.getElementById("inputAddress").value = "";
+      document.getElementById("inputPhoneNumber").value = "";
       console.log(res);
       alert("Your message sent successfully!!");
     })
