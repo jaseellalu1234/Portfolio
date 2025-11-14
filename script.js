@@ -1,3 +1,11 @@
+gsap.to(".social-media", {
+  opacity: 1,
+  y: 20,
+  duration: 1,
+  ease: "power2.out",
+  delay: 0.2,
+});
+
 let scrolls = document.getElementById("navmain");
 
 window.addEventListener("scroll", () => {

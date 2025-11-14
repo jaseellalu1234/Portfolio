@@ -70,7 +70,7 @@ header {
   width: 100%;
   filter: blur(20px);
   opacity: 0;
-  transition: filter 1.5s ease-out, opacity 1.5s ease-out;
+  transition: filter 0.8s ease-out, opacity 0.8s ease-out;
 }
 .blur-image.active {
   filter: blur(0px);
@@ -90,6 +90,7 @@ header {
 }
 .container.social-media {
   margin-top: 100px;
+  opacity: 0;
 }
 .container.social-media ul li {
   z-index: 99;
