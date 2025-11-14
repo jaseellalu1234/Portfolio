@@ -1,255 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jazz</title>
-    <link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "UT9Hg74lZUdrkQolo",
-        });
-      })();
-    </script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jazz</title>
+  <link rel="icon" type="image/x-icon" href="Assets/favicon.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "UT9Hg74lZUdrkQolo",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+
     <div class="gradient-section d-flex justify-content-center">
-      <div class="gradient"></div>
-    </div>
+    <div class="gradient"></div>
+  </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navmain">
-      <div class="container">
-        <a class="navbar-brand" href="#" id="logo">Jaz.</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navmain">
+    <div class="container">
+      <a class="navbar-brand" href="#" id="logo">Jaz.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex">
+        <button class="btn btn-warning" type="submit">Download CV</button>
+      </form>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container content justify-content-center">
+      <img src="Assets/Profile.png" alt="Your Photo" class="img-fluid profile blur-image" id="photo"/>
+      <div class="Header-text-section">
+        <h1>
+          <span class="text-1">Hello, I’m</span><br />
+          <span class="name-span" id="Main-Name">JASEEL</span><br />
+        </h1>
+        <p class="job-role"><span>Full Stack Developer</span></p>
+      </div>
+    </div>
+    <div class="container social-media">
+      <div class="row w-100">
+        <div class="col-md-6">
+          <ul class="d-flex">
+            <li>
+              <a href="https://www.linkedin.com/in/jaseel-vp-a136121a0/" target="_blank">Linkedin</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about"
-                >About</a
-              >
+            <li>
+              <a href="https://github.com/jaseellalu1234" target="_blank">Github</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
-              >
+            <li>
+              <a href="https://dribbble.com/JLcreations" target="_blank">Dribble</a>
             </li>
           </ul>
         </div>
-        <form class="d-flex">
-          <button class="btn btn-warning" type="submit">Download CV</button>
-        </form>
-      </div>
-    </nav>
-
-    <header class="hero">
-      <div class="container content justify-content-center">
-        <img
-          src="Assets/Profile.png"
-          alt="Your Photo"
-          class="img-fluid profile"
-        />
-        <div class="Header-text-section">
-          <h1>
-            <span class="text-1">Hello, I’m</span><br />
-            <span class="name-span">JASEEL</span><br />
-          </h1>
-          <p class="job-role"><span>Full Stack Developer</span></p>
-        </div>
-      </div>
-      <div class="container social-media">
-        <div class="row w-100">
-          <div class="col-md-6">
-            <ul class="d-flex">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/jaseel-vp-a136121a0/"
-                  target="_blank"
-                  >Linkedin</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/jaseellalu1234" target="_blank"
-                  >Github</a
-                >
-              </li>
-              <li>
-                <a href="https://dribbble.com/JLcreations" target="_blank"
-                  >Dribble</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-end">
-            <a href="mailto:jaseel.vpmpd@gmail.com">jaseel.vpmpd@gmail.com</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <div class="container-fluid about-section" id="about">
-      <div class="container pt-5 pb-5">
-        <div class="row">
-          <div class="col-6">
-            <img src="Assets/Me.png" class="img-fluid" alt="" height="500px" />
-          </div>
-          <div class="col-6 d-flex flex-column justify-content-center">
-            <div class="row">
-              <h1>About Me</h1>
-            </div>
-            <h4>
-              I’m a passionate Front-End Developer with hands-on experience in
-              building responsive and user-friendly web interfaces using React
-              JS, JavaScript, HTML, and CSS. I love creating smooth, interactive
-              designs that bring ideas to life. Currently expanding my skills
-              into Node.js and backend development to become a full-stack
-              developer. I enjoy learning new technologies, solving real-world
-              problems, and continuously improving my craft.
-            </h4>
-          </div>
+        <div class="col-md-6 text-end">
+          <a href="mailto:jaseel.vpmpd@gmail.com">jaseel.vpmpd@gmail.com</a>
         </div>
       </div>
     </div>
-    <!-- <div class="container skill-section mx-auto flex-column align-items-center">
-      <div class="row">
-        <div class="col-12">
-          <h1>Skills</h1>
-        </div>
-      </div>
-      <div class="row w-100">
-        <div class="col-12">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  HTML 5
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingTwo"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="headingThree"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
+  </header>
 
-    <div class="container">
+  <div class="container-fluid about-section" id="about">
+    <div class="container pt-5 pb-5">
       <div class="row">
-        <div class="col-6"></div>
+        <div class="col-6">
+          <img src="Assets/Me.png" class="img-fluid" alt="" height="500px" />
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <div class="row">
+            <h1>About Me</h1>
+          </div>
+          <h4>
+            I’m a passionate Front-End Developer with hands-on experience in
+            building responsive and user-friendly web interfaces using React
+            JS, JavaScript, HTML, and CSS. I love creating smooth, interactive
+            designs that bring ideas to life. Currently expanding my skills
+            into Node.js and backend development to become a full-stack
+            developer. I enjoy learning new technologies, solving real-world
+            problems, and continuously improving my craft.
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 pb-5" id="skills">
+    <div class="row">
+      <div class="col-12">HTML</div>
+      <div class="col-12">CSS</div>
+      <div class="col-12">Bootstrap</div>
+      <div class="col-12">JavaScript</div>
+      <div class="col-12">Gsap</div>
+      <div class="col-12">Git</div>
+    </div>
+  </div>
+
+  <!-- Contact-Section -->
+  <div class="contact-section d-flex">
+    <div class="container pt-5 pb-5 my-auto" id="contact">
+      <div class="row w-100 text-light">
+        <div class="col-6">
+          <h1>Let's<br>Connect</h1>
+        </div>
         <div class="col-6">
           <form class="row g-3">
             <div class="col-md-6">
@@ -259,70 +142,39 @@
             <div class="col-md-6">
               <label for="inputEmail" class="form-label">Email</label>
               <input type="email" class="form-control" id="inputEmail" />
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input
-                type="text"
-                class="form-control"
-                id="inputAddress"
-                placeholder="1234 Main St"
-              />
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <textarea
-                class="form-control"
-                id="inputAddress"
-                placeholder="Apartment, studio, or floor"
-              ></textarea>
-            </div>
-            
-            <div class="col-12">
-              <button type="submit" class="btn btn-primary" onclick="sendMail()">Sign in</button>
-            </div>
+
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <textarea class="form-control" id="inputAddress" placeholder="Apartment, studio, or floor"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary" onclick="sendMail()">Sign in</button>
+              </div>
           </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <script>
-      let scrolls = document.getElementById("navmain");
 
-      window.addEventListener("scroll", () => {
-        if (window.scrollY >= 726) {
-          scrolls.classList.add("scrolled");
-          document.getElementById("logo").style.color = "black";
-        } else if (window.scrollY <= 726) {
-          scrolls.classList.remove("scrolled");
-          document.getElementById("logo").style.color = "white";
-        }
-      });
+ 
+  <!-- GSAP core -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-      function sendMail() {
-        var params = {
-          name: document.getElementById("inputName").value,
-          email: document.getElementById("inputEmail").value,
-          message: document.getElementById("inputAddress").value,
-        };
-        const seviceID = "service_6con3he";
-      const templateID = "template_fmbqzeo"; 
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
-      emailjs.send(seviceID, templateID, params).then(
-        res => {
-          document.getElementById("inputName").value = "";
-          document.getElementById("inputEmail").value = "";
-          document.getElementById("inputAddress").value = "";
-          console.log(res);
-          alert("Your message sent successfully!!");
-        }
-      )
-      .catch((err) => console.log(err))
-      };
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+<!-- ScrollSmoother -->
+<script src="https://unpkg.com/lenis@1.3.15/dist/lenis.min.js"></script> 
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

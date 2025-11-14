@@ -2,12 +2,10 @@
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
-html {
-  scroll-behavior: smooth;
-}
 body {
   background-color: rgb(13, 13, 13) !important;
 }
+
 .container {
   display: flex;
 }
@@ -68,6 +66,17 @@ li {
 header {
   margin-top: 10rem;
 }
+.blur-image {
+  width: 100%;
+  filter: blur(20px);
+  opacity: 0;
+  transition: filter 0.8s ease-out, opacity 0.8s ease-out;
+}
+.blur-image.active {
+  filter: blur(0px);
+  opacity: 1;
+}
+
 .hero .profile {
   position: absolute;
   z-index: 99;
@@ -107,10 +116,45 @@ header {
   font-weight: 400;
   line-height: 2;
 }
+#skills {
+  padding: 2rem 5rem;
+  font-weight: 600;
+}
+#skills .col-12 {
+  font-size: 6rem;
+  color: #fff;
+}
+#skills .col-12:hover {
+  color: #f09f00;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.contact-section h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.contact-section {
+  height: 70vh;
+  background: rgba(255, 255, 255, 0.1); /* translucent layer */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+  /* gradient overlay */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 150, 255, 0.1)
+  );
+}
 /* Responsivness */
 
 /* Mobile */
-@media (min-width: 376px) {
+@media (min-width: 376px) and (max-width: 767px) {
+  body {
+    display: none !important;
+  }
   .gradient {
     position: absolute;
     top: -450px;
