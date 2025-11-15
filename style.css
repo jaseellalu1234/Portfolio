@@ -165,23 +165,42 @@ header {
   cursor: pointer;
 }
 .contact-section h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: 700;
+}
+.contact-section .btn-sp {
+  background-color: rgb(88, 92, 122);
+  color: #fff;
+  font-size: 13px;
+  border-radius: 50px;
+}
+.contact-section .form-control,
+.contact-section .form-control:focus {
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff39;
+  border-radius: 50px;
+  color: #fff;
+  outline: none;
+}
+.contact-section .address-textarea,
+.contact-section .address-textarea:focus {
+  border-radius: 15px;
+}
+.contact-section .btn.btn-primary {
+  border-radius: 50px;
+  margin-top: 20px;
 }
 .contact-section {
   height: 70vh;
-  background: rgba(255, 255, 255, 0.1); /* translucent layer */
+  background: linear-gradient(
+    to top right,
+    rgba(0, 102, 255, 0.399),
+    transparent
+  );
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-
-  /* gradient overlay */
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.15),
-    rgba(0, 150, 255, 0.1)
-  );
 }
 /* Responsivness */
 

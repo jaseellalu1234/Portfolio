@@ -186,23 +186,24 @@
       <!-- Contact-Section -->
       <div class="contact-section d-flex align-items-center vh-100">
         <div class="container" id="contact">
-          <div class="row w-100 text-light">
-            <div class="col-6">
-              <h1>Let's<br />Connect</h1>
+          <div class="row w-100 text-light align-items-center">
+            <div class="col-7">
+              <button class="btn btn-sp">Contact Us</button>
+              <h1>Let's<br />Get In Touch</h1>
             </div>
-            <div class="col-6">
+            <div class="col-5">
               <form class="row g-3">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label for="inputName" class="form-label">Full Name</label>
                   <input type="text" class="form-control" id="inputName" />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label for="inputEmail" class="form-label"
                     >Email Address</label
                   >
                   <input type="email" class="form-control" id="inputEmail" />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label for="inputPhoneNumber" class="form-label"
                     >Phone Number</label
                   >
@@ -212,23 +213,24 @@
                     id="inputPhoneNumber"
                   />
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <label for="inputAddress" class="form-label"
                     >How can i help you?</label
                   >
                   <textarea
-                    class="form-control"
+                    class="form-control address-textarea"
                     id="inputAddress"
                     placeholder="Apartment, studio, or floor"
+                    rows="4"
                   ></textarea>
                 </div>
                 <div class="col-12">
                   <button
                     type="submit"
-                    class="btn btn-primary"
+                    class="btn btn-primary w-100"
                     onclick="sendMail()"
                   >
-                    Sign in
+                    Send Message
                   </button>
                 </div>
               </form>
